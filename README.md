@@ -1,3 +1,3 @@
 # javascript brasico
 
-##Códigos básicos e evolução pessoal no javascript.
+Códigos básicos e evolução pessoal no javascript.
