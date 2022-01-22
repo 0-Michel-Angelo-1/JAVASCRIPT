@@ -14,31 +14,24 @@
 
 <body>
 
-    <h1>Checando idade</h1>
-    <input type="number" name="age" id="age">
+    <h1>Checando nacionalidade</h1>
+    <input type="text" name="nation" id="nation">
     <input type="button" value="verificar" onclick="verificar()">
     <div id="res">
 
     </div>
     <script>
-        let text = document.querySelector("input#age");
+        let text = document.querySelector("input#nation");
         let res = document.querySelector("div#res");
 
-
-
         function verificar() {
-            let age = Number(text.value);
-            res.innerHTML = `<p>sua idade é ${age}</p>`;
-            if (age > 18) {
-                res.innerHTML += "<p>voce tem acesso!</p>";
+            let nacionalidade = text.value;
+            if (nacionalidade == "brasileiro") {
+                res.innerHTML = "Você é brasileiro";
             } else {
-                res.innerHTML += "<p>voce nao tem acesso</p>";
+                res.innerHTML = `você é ${nacionalidade}`;
             }
         }
-
-
-
-
     </script>
 </body>
 
